@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+             xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+             
+             xmlns:p="http://primefaces.org/ui"
+             xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <ui:insert name="corpo">
+            <h1>Sistema de Pedidos</h1>
+
+                    <div class="card">
+                        <h:form>
+                            <p:growl id="messages" />
+
+                            <p:menubar>
+                                <p:submenu label="Inicial" icon="pi pi-fw pi-home">
+                                    <p:submenu label="Novo" icon="pi pi-fw pi-plus">
+                                        <p:menuitem value="Cadastrar" icon="pi pi-fw pi-file"
+                                                    url="registro.xhtml"/>                            
+                                    </p:submenu>                             
+                                </p:submenu>
+                                <p:submenu label="Arquivo" icon="pi pi-fw pi-file">
+                                    <p:submenu label="Novo" icon="pi pi-fw pi-plus">
+                                        <p:menuitem value="Cadastrar" icon="pi pi-fw pi-file"
+                                                    url="registro.xhtml"/>                            
+                                    </p:submenu>                             
+                                </p:submenu>
+
+                                <p:submenu label="Clientes" icon="pi pi-fw pi-users">
+                                    <p:menuitem value="Novo" icon="pi pi-fw pi-user-plus"/>
+                                    <p:menuitem value="Apagar" icon="pi pi-fw pi-user-minus"/>
+
+                                </p:submenu>
+
+                                <p:submenu label="Produtos" icon="pi pi-fw pi-calendar">
+                                    <p:submenu label="Editar" icon="pi pi-fw pi-pencil">
+                                        <p:menuitem value="Salvar" icon="pi pi-fw pi-calendar-plus"/>
+                                        <p:menuitem value="Deletar" icon="pi pi-fw pi-calendar-minus"/>
+                                    </p:submenu>
+                                    <p:submenu label="Arquivo" icon="pi pi-fw pi-calendar-times">
+                                        <p:menuitem value="Remover" icon="pi pi-fw pi-calendar-minus"/>
+                                    </p:submenu>
+                                </p:submenu>
+                                <p:divider layout="vertical"/>
+                                    <p:menuitem value="Sair" icon="pi pi-fw pi-power-off"/>
+                                    <f:facet name="options">
+                                        <div class="ui-input-icon-left mr-2">
+                                            <i class="pi pi-fw pi-search"/>
+                                            <p:inputText placeholder="pesquisar"/>
+                                        </div>
+                                        <p:button value="Acessar" icon="pi pi-fw pi-sign-out" styleClass="ui-button-info" />
+                                    </f:facet>              
+
+                            </p:menubar>
+                        </h:form>
+                    </div>
+           </ui:insert>
+    </h:body>
+</html>
